@@ -14,7 +14,7 @@ Implement **[this deisgn](https://www.figma.com/file/YdHvYic4a8F0Hu7l6YQnDhvr/Ca
 - The design should be responsive (as shown in the design link)
 - You should use ES6+ Javascript Features, all modern browsers support ES Modules and async/await
 - Create a repo for the project and publish it as a [Github page](https://pages.github.com/) or using [now.sh](https://now.sh/)
-- use this backend API `https://faker-api-yczfsfkfcd.now.sh/api/products` endpoint to load the products
+- Use this backend API `https://faker-api-yczfsfkfcd.now.sh/api/products` endpoint to load the products
     - You may save and load the data locally if it's more suitable
 - You must create a cart.js file that manages your cart state **which is futhur explained bellow**
 
@@ -32,7 +32,7 @@ Your cart.js file contains
 ## Extra points
 
 - You are judged on the cleanliness of your code [here's a summary of Clean Code for JS](https://github.com/ryanmcdermott/clean-code-javascript)
-- Thinking of DX by organizing you components if you're using any (this can be done even with pure JS)
+- Think of DX by organizing you components if you're using any (this can be done even with pure JS)
 - Using typescript or flow is a plus
 
 
