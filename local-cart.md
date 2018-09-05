@@ -16,7 +16,7 @@ Implement **[this deisgn](https://www.figma.com/file/YdHvYic4a8F0Hu7l6YQnDhvr/Ca
 - Create a repo for the project and publish it as a [Github page](https://pages.github.com/) or using [now.sh](https://now.sh/)
 - Use this backend API `https://faker-api-yczfsfkfcd.now.sh/api/products` endpoint to load the products
     - You may save and load the data locally if it's more suitable
-- You must create a cart.js file that manages your cart state **which is futhur explained bellow**
+- You must create a cart.js file that manages your cart state **which is furthur explained bellow**
 
 #### cart.js
 
@@ -25,14 +25,14 @@ Implement **[this deisgn](https://www.figma.com/file/YdHvYic4a8F0Hu7l6YQnDhvr/Ca
 Your cart.js file contains
 - The state of the cart 
 - Methods for **adding removing incrementing and decrementing** items
-- A way to **get the state** of the car directly
-- Implements an EventEmitter exposing a subscribe method that allows you to pass a function that is triggered whenever the cart's state changes
+- A way to **get the state** of the cart directly
+- Implements an EventEmitter exposing a subscribe method that allows you to pass a function that is triggered whenever the cart's state changes.
 - Implement a cart.test.js file that tests the cart.js
 
 ## Extra points
 
 - You are judged on the cleanliness of your code [here's a summary of Clean Code for JS](https://github.com/ryanmcdermott/clean-code-javascript)
-- Think of DX by organizing you components if you're using any (this can be done even with pure JS)
+- Think of DX by organizing your components if you're using any (this can be done even with pure JS)
 - Using typescript or flow is a plus
 
 
