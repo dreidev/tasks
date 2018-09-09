@@ -30,7 +30,7 @@ Implement **[this deisgn](https://www.figma.com/file/YdHvYic4a8F0Hu7l6YQnDhvr/Ca
 - The class should contain the state of the cart 
 - The class should expose action methods for **adding removing incrementing and decrementing** items
 - The class should expose way to **get the state** of the cart directly
-- You must also implement the EventEmitter which has a subscrube, publish, and unsubscribe methods 
+- You must also implement the **EventEmitter** class which has a **subscribe, publish, and unsubscribe** methods 
 - The cart.js action methods should publish an event on the cart calss `"cart.changed"` 
 - Implement a cart.test.js file that tests the cart.js
 
