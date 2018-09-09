@@ -41,7 +41,7 @@ For example if you are using react your code can (but should not have to) work l
 import React from "react"
 import Cart from "./cart"
 
-cart = new Cart()
+let cart = new Cart()
 
 export default class UI extends React.Component {
   state = {
