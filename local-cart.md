@@ -64,7 +64,9 @@ You meight notice this approach can be used with any framework.
 ## Evaluation criteria
 
 - You are judged on the cleanliness of your code [here's a summary of Clean Code for JS](https://github.com/ryanmcdermott/clean-code-javascript)
+- The design decisions you take 
 - Think of Developer eXperience by organizing your components/modules if you're using any (this can be done even with pure JS).
+- In other words, You are mostly not evaluated on completness but quality, show us what you've got.
 
 ## Extra points
 
