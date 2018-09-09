@@ -20,19 +20,50 @@ Implement **[this deisgn](https://www.figma.com/file/YdHvYic4a8F0Hu7l6YQnDhvr/Ca
 
 #### cart.js
 
-`cart.js` should contain your app logic and should be designed to work with any framework or pure JS
+`cart.js` should contain the cart logic and should be designed to work with any framework or pure JS
 
-Your cart.js file contains
-- The state of the cart 
-- Methods for **adding removing incrementing and decrementing** items
-- A way to **get the state** of the cart directly
-- Implements an EventEmitter exposing a subscribe method that allows you to pass a function that is triggered whenever the cart's state changes.
+- Your cart js is a class that extends an EventEmitter
+- Cart is exported from an es module (modern browsers supprt es-modules)
+- The class should contain the state of the cart 
+- The class should expose action methods for **adding removing incrementing and decrementing** items
+- The class should expose way to **get the state** of the cart directly
+- You must also implement the EventEmitter which has a subscrube, publish, and unsubscribe methods 
+- The cart.js action methods should publish an event on the cart calss `"cart.changed"` 
 - Implement a cart.test.js file that tests the cart.js
+
+For example if you are using react your code can (but should not) work like this
+
+```js
+import React from "react"
+import Cart from "./cart"
+
+cart = new Cart()
+
+export default class UI extends React.Component {
+  state = {
+    cart: cart.getState()
+  }
+  componentDidMount() {
+      cart.subscribe("cart.changed", this.setState({ cart: cart.getState() }))
+  }
+  render() {
+    return <button onClick={() => cart.addItem({})}>Add</button>
+  }
+}
+```
+
+This way when an action in the UI occures it updates the cart and it in turn the cart will update all it's subscribers.
+You meight notice this approach can be used with any framework.
+
+> You are allowed to vary on the details of the implementation so long as the your cart logic is isolated, framework agnostic, and reactive.
+
+## Evaluation criteria
+
+- You are judged on the cleanliness of your code [here's a summary of Clean Code for JS](https://github.com/ryanmcdermott/clean-code-javascript)
+- Think of Developer eXperience by organizing your components/modules if you're using any (this can be done even with pure JS).
 
 ## Extra points
 
-- You are judged on the cleanliness of your code [here's a summary of Clean Code for JS](https://github.com/ryanmcdermott/clean-code-javascript)
-- Think of DX by organizing your components if you're using any (this can be done even with pure JS)
 - Using typescript or flow is a plus
 
 
