@@ -3,9 +3,9 @@
 The folowing task is intended to evaluates your Frontend UI and Application Development skills.
 Complete it to your personal professional satisfaction.
 
-Implement **[this deisgn](https://www.figma.com/file/YdHvYic4a8F0Hu7l6YQnDhvr/CartTask?node-id=0%3A1)**
+Implement **[this deisgn][figma link]** (open the link to view the mobile view)
 
-![cart task](./img/cart-task-desktop-view.png)
+[![cart task](./img/cart-task-desktop-view.png)][figma link]
 
 > If you sign in to figma you can export the assets (like cart icon etc) from the design
 
@@ -70,3 +70,5 @@ You meight notice this approach can be used with any framework.
 - Using typescript or flow is a plus
 
 
+
+[figma link]: https://www.figma.com/file/YdHvYic4a8F0Hu7l6YQnDhvr/CartTask?node-id=0%3A1
