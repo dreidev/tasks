@@ -1,5 +1,8 @@
 # Local Cart
 
+The folowing task is intended to evaluates your Frontend UI and Application Development skills.
+Complete it to your personal professional satisfaction.
+
 Implement **[this deisgn](https://www.figma.com/file/YdHvYic4a8F0Hu7l6YQnDhvr/CartTask?node-id=0%3A1)**
 
 ![cart task](./img/cart-task-desktop-view.png)
@@ -10,7 +13,7 @@ Implement **[this deisgn](https://www.figma.com/file/YdHvYic4a8F0Hu7l6YQnDhvr/Ca
 
 - You may use a framework of your choosing.
 - Vanilla JS is better, jQuery is worse.
-- Please don't use any extra libraries if you can. (no bootstrap)
+- Please don't use any extra libraries if you can. (no bootstrap, it's not worth it)
 - The design should be responsive (as shown in the design link)
 - You should use ES6+ Javascript Features, all modern browsers support ES Modules and async/await
 - Create a repo for the project and publish it as a [Github page](https://pages.github.com/) or using [now.sh](https://now.sh/)
@@ -31,7 +34,7 @@ Implement **[this deisgn](https://www.figma.com/file/YdHvYic4a8F0Hu7l6YQnDhvr/Ca
 - The cart.js action methods should publish an event on the cart calss `"cart.changed"` 
 - Implement a cart.test.js file that tests the cart.js
 
-For example if you are using react your code can (but should not) work like this
+For example if you are using react your code can (but should not have to) work like this
 
 ```js
 import React from "react"
@@ -55,7 +58,7 @@ export default class UI extends React.Component {
 This way when an action in the UI occures it updates the cart and it in turn the cart will update all it's subscribers.
 You meight notice this approach can be used with any framework.
 
-> You are allowed to vary on the details of the implementation so long as the your cart logic is isolated, framework agnostic, and reactive.
+> You are allowed to vary on the details of the implementation so long as your cart logic is isolated, framework agnostic, and reactive.
 
 ## Evaluation criteria
 
