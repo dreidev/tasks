@@ -1,6 +1,7 @@
 # Local Cart
 
 The folowing task is intended to evaluates your Frontend UI and Application Development skills.
+
 Complete it to your personal professional satisfaction.
 
 Implement **[this deisgn][figma link]** (open the link to view the mobile view)
